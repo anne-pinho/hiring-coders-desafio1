@@ -77,6 +77,15 @@
   color: #a681a6;
 }
 
+.section2 span {
+  font-size: 12px;
+  color: black;
+  font-weight: bold;
+  text-align: center;
+  margin-left: 170px;
+  margin-top: 10px;
+}
+
 .section2 input {
   margin-bottom: 8px;
   font-family: sans-serif, "Roboto";

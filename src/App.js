@@ -7,6 +7,7 @@ import LogoSacola from './images/sacola-desconto.png'
 function App() {
   const [usuario, setUsuario] = useState('');
   const [nome, setNome] = useState('');
+  const [isSuccess, setIsSuccess] = useState(false);
 
   function handleChange(event) {
     setUsuario(event.target.value)
@@ -20,6 +21,7 @@ function App() {
     console.log(usuario);
     localStorage.setItem('email', usuario);
     localStorage.setItem('nome', nome)
+    setIsSuccess (true);
   }
 
   return (
@@ -44,6 +46,7 @@ function App() {
           <input type="text" placeholder="nome" value={nome} onChange={nomeUsuario} />
           <input type="text" placeholder="email" value={usuario} onChange={handleChange} />
           <button onClick={handleClick} type="submit">CADASTRAR</button>
+          {isSuccess ? <span>Usuário cadastrado.</span> : null}
         </div>
       </div>
 
