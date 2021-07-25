@@ -14,7 +14,7 @@ yarn install
 yarn start
 ```
 
-Também é possível visuaizar online: https://desafio1-hiring-coders.netlify.app/
+Para visulizar online: https://desafio1-hiring-coders.netlify.app/
 
 
 ## Autor:
